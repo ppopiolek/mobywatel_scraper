@@ -56,7 +56,7 @@ css_selectors = {
 if __name__ == "__main__":
     driver = webdriver.Firefox()
     driver.get("https://serwis.epuap.gov.pl/mlpz/login?ORIGIN=nforms_EServices")
-    WebDriverWait(driver, 120).until(lambda driver: driver.current_url == "https://www.mobywatel.gov.pl/mObywatel")
+    WebDriverWait(driver, 180).until(lambda driver: driver.current_url == "https://www.mobywatel.gov.pl/mObywatel")
     driver.get("https://www.mobywatel.gov.pl/mObywatel/twoje-dane")
 
     data = {}
